@@ -1,0 +1,105 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <link rel="stylesheet" href="src/weather.css" />
+
+    <title>mini Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weatherApp">
+        <form id="citySearch">
+          <div class="row">
+            <div class="col-7">
+              <input
+                type="city"
+                placeholder="Enter a city here "
+                id="cityInput"
+                class="form-control search-input"
+                autocomplete="off"
+                autofocus="on"
+              />
+            </div>
+            <div class="col-2 p-0">
+              <input
+                type="submit"
+                value="Search"
+                class="btn btn-primary"
+                id="searchButton"
+              />
+            </div>
+          </div>
+        </form>
+
+        <h2>
+          <div class="float-left"><strong id="newCity"> </strong></div>
+          <div class="cityInfo">
+            Last updated: <span id="currentDate"></span>
+            <span id="cityTime"> </span>
+          </div>
+          <span id="description"> </span>
+        </h2>
+        <br />
+        <h3>
+          <div class="row">
+            <div class="col-1">
+              <img src="" alt="" id="icon" class="float-left" />
+            </div>
+            <div class="col-2">
+              <br />
+              <span class="day" id="dayGrad"> 17 </span>
+              <span class="degrees">
+                <a href="#" id="celcius" class="active">°C</a> |
+                <a href="#" id="fahrenheit">°F </a>
+              </span>
+            </div>
+            <div class="col-3">
+              <ul id="parameters">
+                <li>Feels like: <span id="feelsLike"></span>°C</li>
+                <li>Wind: <span id="wind"> </span> km/h</li>
+                <li>Humidity: <span id="humidity"></span>%</li>
+              </ul>
+            </div>
+          </div>
+        </h3>
+
+        <div class="weather-card" id="forecast-card"></div>
+      </div>
+
+      <footer>
+        <strong>
+          coded by Mary Nevermann
+          <a
+            id="github-Link"
+            href="https://github.com/Mary-clouds/another-great-weather-app"
+            target="_blank"
+            rel="noopener norefereer"
+          >
+            open source on Github</a
+          >
+          <a
+            href="https://mini-weatherapp.netlify.app/"
+            target="_blank"
+            rel="noopener norefereer"
+            id="netlify-Link"
+          >
+            hosted on Netlify</a
+          >
+        </strong>
+      </footer>
+    </div>
+    <script src="src/weather.js"></script>
+  </body>
+</html>
