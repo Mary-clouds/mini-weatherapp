@@ -32,7 +32,6 @@ button:hover {
 footer {
   max-width: 900px;
   margin: 30px auto;
-  color: whitesmoke;
 }
 
 #description,
@@ -61,12 +60,6 @@ footer {
   max-width: 19px;
 }
 
-#github-Link:hover {
-  color: whitesmoke;
-}
-#netlify-Link:hover {
-  color: whitesmoke;
-}
 #icon {
   max-width: 85px;
 }
